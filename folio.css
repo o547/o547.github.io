@@ -49,14 +49,20 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin: 50px 0;
-
 }
 
 .box_area img {
   height: 220px;
   width: 220px;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
 }
+
+.box_area img:hover{
+  transform: scale(1.1);
+}
+
+
 .pre_product_area {
   background: linear-gradient(0deg, rgb(71, 152, 227), rgb(255, 255, 255));
   height: 40px;
