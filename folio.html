@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="folio.css" />
+  </head>
+  <body>
+    <header><div class="logo">Portfolio</div></header>
+    <div class="box_area">
+      <img src="./image/218339963.png" />
+      <div class="square_box">
+        <h1>Profile</h1>
+        <table>
+          <tbody>
+            <tr>
+              <th>名前：</th>
+              <td>o547 (<a href="https://github.com/o547">GitHub</a>名)</td>
+            </tr>
+            <tr>
+              <th>所属：</th>
+              <td>芝浦工業大学 工学部 情報工学コース</td>
+            </tr>
+            <tr>
+              <th>年齢：</th>
+              <td><div class="age">20 (B2)</div></td>
+            </tr>
+            <tr>
+              <th>資格：</th>
+              <td>基本情報技術者試験 (2022/12)<br />TOEIC L&R 845 (2025/10)</td>
+            </tr>
+            <tr>
+              <th>連絡：</th>
+              <td>otashibaura@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="square_box" style="width: 620px">
+        <h1>Skills</h1>
+        <table>
+          <tbody>
+            <tr>
+              <th>Python/C言語/Java：</th>
+              <td>主要な3言語を理解しています</td>
+            </tr>
+            <tr>
+              <th>Django：</th>
+              <td>
+                Pythonによるwebアプリのバックエンド構築ができます<br />
+                SQLiteによるDB操作や、AIの組み込みも経験があります
+              </td>
+            </tr>
+            <tr>
+              <th>html/css/javascript：</th>
+              <td>
+                デザインは苦手ですが、フロントエンドにも興味があります
+                <br />Reactを現在勉強中です
+              </td>
+            </tr>
+            <tr>
+              <th>pytorch：</th>
+              <td>pythonによる深層学習を勉強中です</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="pre_product_area"></div>
+    <div class="product_area">
+      <h1>制作物</h1>
+      <h2>１：Coo-lendar</h2>
+      <article>
+        <img src="./image/2026-02-06 163927.png" />
+        <img src="./image/2026-02-06 203105.png" />
+        <div class="detail_box">
+          <p>
+            登録した予定や希望の日時などに基づき、スケジュールを入れる最適な日時を提案してくれるカレンダーアプリ
+          </p>
+          <p>複数のユーザ間で全員の予定が合う時間も提案できる</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>技術スタック：</th>
+                <td>Django(Python), SQLite 等</td>
+              </tr>
+              <tr>
+                <th>担当箇所：</th>
+                <td>
+                  システムの設計やDB設計、予定追加、<br />フレンドなどの、予定提案を除くバックエンド機能全般
+                </td>
+              </tr>
+
+              <tr>
+                <th>制作：</th>
+                <td>ハッカソンにて4人/1週間程で作成</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <hr />
+      <h2>２：セカンドガイドブック</h2>
+      <article>
+        <div class="detail_box">
+          <p>
+            アプリ内の掲示板にされた投稿に基づいて、<br />
+            リアリティが高い最新のガイドブックを自動生成するアプリ
+          </p>
+          <p>
+            他ユーザから評価を得た投稿を、LLMが要約してガイドブックに反映させる
+          </p>
+          <p>
+            制作背景より「ベトナム在住の日本人」をターゲットにしている
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <th>技術スタック：</th>
+                <td>Django(Python), SQLite, geminiAPI 等</td>
+              </tr>
+              <tr>
+                <th>担当箇所：</th>
+                <td>検索機能を除く、バックエンドのほぼ全て</td>
+              </tr>
+
+              <tr>
+                <th>制作：</th>
+                <td>短期留学中に、4人/2週間で制作(チームリーダーを担当)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <img src="./image/2026-02-06 171023.png" />
+        <img src="./image/2026-02-06 170835.png" />
+      </article>
+
+      <hr />
+      <h2>３：ボケ軽減</h2>
+      <article>
+        <img src="./image/2026-02-06 171838.png" />
+        <img src="./image/2026-02-06 174559.png" />
+        <div class="detail_box">
+          <p>
+            逆畳み込みやwiener filter、フーリエ変換などを用いて、<br />入力された画像のボケを軽減させるアプリ
+          </p>
+          <p>
+            先鋭化をしているだけではなく、左の式に基づいて理論的に導いている
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <th>技術スタック：</th>
+                <td>opencv, Python, Django 等</td>
+              </tr>
+              <tr>
+                <th>制作：</th>
+                <td>個人/2日で制作(アルゴリズム作成は大学の講義に基づく)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+    <script src="./folio.js"></script>
+  </body>
+</html>
