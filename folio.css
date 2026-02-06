@@ -36,6 +36,10 @@ header {
   margin-bottom: 5px;
 }
 
+.box2{
+    width: 620px;
+}
+
 body {
   margin: 0px;
 }
@@ -45,6 +49,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin: 50px 0;
+
 }
 
 .box_area img {
@@ -101,6 +106,7 @@ body {
   width: 520px;
   border-radius: 10px;
   transition-duration: 0.5s;
+  margin: 5px;
 }
 
 .product_area img:hover {
@@ -118,5 +124,25 @@ body {
 }
 
 .product_area hr {
-  margin: 80px 0;
+  margin: 60px 0;
+}
+
+.product_area a{
+    margin: 0 20px;
+}
+
+@media(max-width:780px){
+    .box_area, .product_area article{
+        display: flex;
+        flex-flow: column;
+    }
+    .square_box, .detail_box{
+        width: 80vw;
+    }
+    .box2{
+        height: auto;
+    }
+        .product_area img {
+        width: 80vw;
+    }
 }
