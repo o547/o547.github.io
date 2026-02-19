@@ -14,8 +14,9 @@ header {
 
 .square_box {
   background: linear-gradient(45deg, rgb(225, 236, 239), rgb(215, 230, 235));
-  height: 250px;
-  width: 400px;
+  min-height: 280px;
+  max-width: 400px;
+  width:100%;
   margin: 15px;
   border-radius: 10px;
   padding: 20px 40px;
@@ -24,7 +25,7 @@ header {
 }
 
 .square_box:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .square_box td {
@@ -37,7 +38,8 @@ header {
 }
 
 .box2{
-    width: 620px;
+    max-width: 620px;
+    width:100%;
 }
 
 body {
@@ -52,14 +54,16 @@ body {
 }
 
 .box_area img {
-  height: 220px;
-  width: 220px;
+  max-height: 220px;
+  height: 100%;
+  max-width: 220px;
+  width:100%;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
   transition-duration: 0.5s;
 }
 
 .box_area img:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
@@ -87,7 +91,9 @@ body {
 
 .detail_box {
   background-color: rgb(53, 113, 168);
-  width: 600px;
+  max-width: 600px;
+  width:100%;
+
   margin: 15px;
   border-radius: 10px;
   padding: 10px 20px;
@@ -109,25 +115,37 @@ body {
 }
 
 .product_area img {
-  width: 520px;
+  max-width: 520px;
+  width:100%;
   border-radius: 10px;
   transition-duration: 0.5s;
-  margin: 5px;
+  margin: 8px;
 }
 
 .product_area img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .iframe {
-  width: 500px;
+  max-width: 500px;
+  width:100%;
+
 }
 
 .product_area article {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+
 }
+
+.images_area{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 .product_area hr {
   margin: 60px 0;
@@ -137,7 +155,34 @@ body {
     margin: 0 20px;
 }
 
-@media(max-width:780px){
+
+
+.product_title{
+  display: flex;
+}
+
+@media(max-width:1880px){
+    .product_area img {
+    max-width: 40vw;
+    width:100%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    margin: 15px;
+  }
+   .left{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+}
+
+@media(max-width:1500px){
+  .box_area img {
+    display:  none;
+  }
+}
+
+@media(max-width:800px){
     .box_area, .product_area article{
         display: flex;
         flex-flow: column;
@@ -150,5 +195,9 @@ body {
     }
         .product_area img {
         width: 80vw;
+    }
+    .product_title{
+      display: flex;
+      flex-direction: row;
     }
 }

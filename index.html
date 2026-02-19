@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
     <title>Portfolio</title>
     <link rel="stylesheet" href="folio.css" />
   </head>
@@ -43,7 +43,7 @@
         <table>
           <tbody>
             <tr>
-              <th>Python/C言語/Java：</th>
+              <th>Python/C/Java：</th>
               <td>Pythonがメインですが、それぞれ学習済です</td>
             </tr>
             <tr>
@@ -54,10 +54,16 @@
               </td>
             </tr>
             <tr>
-              <th>html/css/javascript：</th>
+              <th>html/css/js：</th>
               <td>
                 デザインは苦手ですが、フロントエンドにも興味があります
                 <br />Reactを現在勉強中です
+              </td>
+            </tr>
+            <tr>
+              <th>PHP(laravel)：</th>
+              <td>
+                PHPでも簡単なバックエンド構築ができます
               </td>
             </tr>
             <tr>
@@ -71,43 +77,17 @@
     <div class="pre_product_area"></div>
     <div class="product_area">
       <h1>制作物</h1>
-      <h2>１：Coo-lendar</h2>
-      <h3><a href="https://one3-hackathon202512.onrender.com/">https://one3-hackathon202512.onrender.com/</a>(ロードがかなり長いです)</h3>
-      <article>
-        <img src="./image/2026-02-06 163927.png" />
-        <img src="./image/2026-02-06 203105.png" />
-        <div class="detail_box">
-          <p>
-            登録した予定や希望の日時などに基づき、スケジュールを入れる最適な日時を提案してくれるカレンダーアプリ
-          </p>
-          <p>複数のユーザ間で全員の予定が合う時間も提案できる</p>
-          <table>
-            <tbody>
-              <tr>
-                <th>技術スタック：</th>
-                <td>Django(Python), SQLite 等</td>
-              </tr>
-              <tr>
-                <th>担当箇所：</th>
-                <td>
-                  システムの設計やDB設計、予定追加、<br />フレンドなどの、予定提案を除くバックエンド機能全般
-                </td>
-              </tr>
+      <div class="product_title">
+        <h2>１：セカンドガイドブック</h2>
+        <h3><a href="https://gpbl-web-app.onrender.com/">https://gpbl-web-app.onrender.com/</a>(ロードが比較的長いです)</h3>
+      </div>
+      <article class="left">
 
-              <tr>
-                <th>制作：</th>
-                <td>ハッカソンにて4人/1週間程で作成</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="images_area">
+          <img src="./image/2026-02-06 171023.png" />
+          <img src="./image/2026-02-06 170835.png" />
         </div>
-      </article>
 
-      <hr />
-      <h2>２：セカンドガイドブック</h2>
-      <h3><a href="https://gpbl-web-app.onrender.com/">https://gpbl-web-app.onrender.com/</a>(ロードが比較的長いです)</h3>
-
-      <article>
         <div class="detail_box">
           <p>
             アプリ内の掲示板にされた投稿に基づいて、<br />
@@ -129,7 +109,7 @@
                 <th>担当箇所：</th>
                 <td>検索機能を除く、バックエンドのほぼ全て</td>
               </tr>
-
+              
               <tr>
                 <th>制作：</th>
                 <td>短期留学中に、4人/2週間で制作(チームリーダーを担当)</td>
@@ -137,17 +117,55 @@
             </tbody>
           </table>
         </div>
-        <img src="./image/2026-02-06 171023.png" />
-        <img src="./image/2026-02-06 170835.png" />
+
       </article>
-
+    
       <hr />
-      <h2>３：ボケ軽減</h2>
-      <h3><a href="https://github.com/o547/deconv_app">https://github.com/o547/deconv_app</a></h3>
-
-      <article>
+      
+      <div class="product_title">
+        <h2>２：Coo-lendar</h2>
+        <h3><a href="https://one3-hackathon202512.onrender.com/">https://one3-hackathon202512.onrender.com/</a>(ロードがかなり長いです)</h3>
+      </div>
+        <article class=>
+        <div class="detail_box">
+          <p>
+            登録した予定や希望の日時などに基づき、スケジュールを入れる最適な日時を提案してくれるカレンダーアプリ
+          </p>
+          <p>複数のユーザ間で全員の予定が合う時間も提案できる</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>技術スタック：</th>
+                <td>Django(Python), SQLite 等</td>
+              </tr>
+              <tr>
+                <th>担当箇所：</th>
+                <td>
+                  システムの設計やDB設計、予定追加、<br />フレンドなどの、予定提案を除くバックエンド機能全般
+                </td>
+              </tr>
+              <tr>
+                <th>制作：</th>
+                <td>ハッカソンにて4人/1週間程で作成</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="images_area">
+          <img src="./image/2026-02-06 163927.png" />
+          <img src="./image/2026-02-06 203105.png" />
+        </div>
+      </article>
+      <hr />
+      <div class="product_title">
+        <h2>３：ボケ軽減</h2>
+        <h3><a href="https://github.com/o547/deconv_app">https://github.com/o547/deconv_app</a></h3>
+      </div>
+      <article class="left">
+      <div class="images_area">
         <img src="./image/2026-02-06 171838.png" />
         <img src="./image/2026-02-06 174559.png" />
+      </div>
         <div class="detail_box">
           <p>
             逆畳み込みやwiener filter、フーリエ変換などを用いて、<br />入力された画像のボケを軽減させるアプリ
@@ -171,8 +189,10 @@
       </article>
 
       <hr />
-      <h2>４：No-Code DeepLearning(β)</h2>
-      <h3><a href="https://github.com/o547/nocode_DL">https://github.com/o547/nocode_DL</a></h3>
+      <div class="product_title">
+        <h2>４：No-Code DeepLearning(β)</h2>
+        <h3><a href="https://github.com/o547/nocode_DL">https://github.com/o547/nocode_DL</a></h3>
+      </div>
 
       <article>
         <div class="detail_box">
@@ -180,7 +200,7 @@
             基本的なディープラーニングを、csvファイルのアップとGUIの操作により<br>ノーコードで実装できるwebアプリ
           </p>
           <p>
-            入出力をまとめたcsvファイルを元に、出力を予想するモデルを作成する
+            入出力をまとめたcsvファイルから、出力を予想するモデルを作成する
           </p>
           <p>
             モデルは入力のみのcsvファイルや、入力の手打ちで実際に使うことができる
@@ -198,10 +218,43 @@
             </tbody>
           </table>
         </div>
+      <div class="images_area">
         <img src="./image/2026-02-10 151002.png" />
         <img src="./image/2026-02-10 151051.png" />
+      </div>
       </article>
 
+      <hr />
+      <div class="product_title">
+        <h2>５：家計簿</h2>
+        <h3><a href="https://github.com/o547/BudgetBook">https://github.com/o547/BudgetBook</a></h3>
+      </div>
+      <article class="left">
+      <div class="images_area">
+        <img src="./image/2026-02-19 175717.png" />
+        <img src="./image/2026-02-19 180310.png" />
+      </div>
+        <div class="detail_box">
+          <p>
+            登録した出入金の記録から、AIにアドバイスをもらえるwebアプリ
+          </p>
+          <p>
+            グラフ表示や記録の閲覧など、基本的な家計簿機能も備えている
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <th>技術スタック：</th>
+                <td>PHP, laravel, MySQL  等</td>
+              </tr>
+              <tr>
+                <th>制作：</th>
+                <td>個人/3日で制作</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
     </div>
     <script src="./folio.js"></script>
