@@ -14,7 +14,7 @@ header {
 
 .square_box {
   background: linear-gradient(45deg, rgb(225, 236, 239), rgb(215, 230, 235));
-  min-height: 280px;
+  min-height: 250px;
   max-width: 400px;
   width:100%;
   margin: 15px;
